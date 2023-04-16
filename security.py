@@ -3,6 +3,7 @@ import numpy as np
 import face_recognition
 import os
 from datetime import datetime
+import keyboard
 
 dir = 'images'
 images = []
@@ -64,3 +65,8 @@ while True:
 
     cv2.imshow('Webcam', img)
     cv2.waitKey(1)
+    
+    if keyboard.is_pressed('q'):
+        break
+
+cv2.destroyWindow('Webcam')
