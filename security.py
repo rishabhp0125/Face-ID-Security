@@ -1,3 +1,5 @@
+#by Rishabh
+#using python 3.7.6
 import cv2
 import numpy as np
 import face_recognition
